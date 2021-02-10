@@ -9,6 +9,7 @@ import Header from "../components/header"
 import About from "../components/about"
 import Services from "../components/services"
 import Portfolio from "../components/portfolio"
+import Contact from "../components/contact"
 
 
 const IndexPage = () => (
@@ -17,6 +18,7 @@ const IndexPage = () => (
     <About />
     <Services />
     <Portfolio />
+    <Contact />
   </Layout>
 )
 

@@ -29,9 +29,9 @@ const Layout = ({ children }) => {
       <div>
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+        <div class="full-width-bar">
+          <p>Made by the Big Ole Website Guy&copy; 2020</p>
+        </div>
         </footer>
       </div>
     </>
