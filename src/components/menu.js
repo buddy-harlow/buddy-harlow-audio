@@ -6,7 +6,7 @@ import {Container, Navbar, Nav} from 'react-bootstrap'
 const Menu = () => (
     <Container>
     <Navbar fixed="top" expand="md" >
-        <Navbar.Brand href="/">Buddy Harlow Audio Co.</Navbar.Brand>
+        <Navbar.Brand href="/">Buddy Harlow Audio</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarResponsive" />
         <Navbar.Collapse id="navbarResponsive">
             <Nav as="ul" className="ml-auto">
