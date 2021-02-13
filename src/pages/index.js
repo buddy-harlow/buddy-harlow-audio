@@ -56,7 +56,8 @@ const IndexPage = (props) => (
     <form name="contact" id="contact-form" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
       <input name="name" type="text" placeholder="Name" />
       <input name="email" type="email" placeholder="Email" />
-      <textarea name="message" rows="4" cols="50" placeholder="Message"/>
+      <input name="phone-number" type="text" placeholder="Phone Number" />
+      <textarea name="message" rows="5"placeholder="Message"/>
       <button>Submit</button>
     </form>
 
