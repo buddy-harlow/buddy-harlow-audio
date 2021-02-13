@@ -54,12 +54,11 @@ const IndexPage = (props) => (
   <div id="contact">
     <h2>Contact</h2>
     <form name="contact" id="contact-form" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-      <input type="hidden" name="contact-form" value="contact-form-bha" />
       <input name="name" type="text" placeholder="Name" />
       <input name="email" type="email" placeholder="Email" />
       <input name="phone-number" type="text" placeholder="Phone Number" />
       <textarea name="message" rows="5"placeholder="Message"/>
-      <button>Submit</button>
+      <button type="submit">Submit</button>
     </form>
 
   </div>
