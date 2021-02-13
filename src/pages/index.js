@@ -1,14 +1,12 @@
 import React from "react"
 import { graphql } from 'gatsby'
 import BackgroundImage from 'gatsby-background-image'
-import { Form, Button } from 'react-bootstrap'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../components/layout.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Img from "gatsby-image"
-import Services from "../components/services"
-import Contact from "../components/contact"
+
 
 
 
@@ -18,7 +16,7 @@ const IndexPage = (props) => (
       <SEO title="Home" />
         <div class="img-container">
           <BackgroundImage fluid={props.data.bgi.childImageSharp.fluid} alt="Image inside the studio showing monitoring setup and mix position">
-            <div class="inner-container">
+            <div class="inner-container" id="logo">
               <Img fluid={props.data.bhLogo.childImageSharp.fluid} alt="Buddy Harlow Audio Co. Logo"/>
             </div>
           </BackgroundImage>
@@ -35,7 +33,7 @@ const IndexPage = (props) => (
     <h2>Portfolio</h2>
         <div class="portfolio">
             
-            <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1152216199%3Fsecret_token%3Ds-LWrzLmTFMR6&color=%23be1e2d&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <iframe width="100%" height="450" title="Buddy Harlow Portfolio" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1152216199%3Fsecret_token%3Ds-LWrzLmTFMR6&color=%23be1e2d&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
             <div class="iframe-container port-right">
                 <iframe src="https://www.youtube.com/embed/ragnoP0IfWg" frameborder="0" title="Garrett Coffman drum playthrough video tracked and mixed by Buddy Harlow"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>    
@@ -83,7 +81,7 @@ query{
   }
   bhLogo: file(relativePath: {eq: "BHAC-white-03.png"}) {
     childImageSharp {
-      fluid(maxWidth: 900) {
+      fluid(maxWidth: 600) {
         ...GatsbyImageSharpFluid
       }
     }
