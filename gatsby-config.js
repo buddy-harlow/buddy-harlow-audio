@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Buddy Harlow Audio Co.`,
-    description: `A portfolio page showing audio and mix engineering examples `,
+    description: `Howdy, my name's Buddy Harlow, and I am an audio engineer based out of Newport News, VA. `,
     url: "https://buddyharlowaudio.com",
-    image: "/Studio.jpg",
+    image: "/images/Studio.jpg",
     author: "Buddy Harlow"
   },
   plugins: [

@@ -7,6 +7,9 @@ import "../components/layout.css"
 const Header = () => (
     <div>
     <SEO title="Home" />
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe"></meta>
     <div class="img-container">
       <div class="inner-container">
         <img src={Image}/>
