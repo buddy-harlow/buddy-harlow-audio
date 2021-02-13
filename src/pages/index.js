@@ -46,9 +46,12 @@ const IndexPage = (props) => (
     </div>
     <div id="about" class="aboutMe">
     <h2>About</h2>
-        <p>Howdy, my name's Buddy Harlow and I am an audio engineer based out of Newport News, Va having originally began my journey in Harrisonburg, VA. My goals as an audio engineer center around translating an artists goals into the audio production domain.
-          In audio production collaboration and communication are key to making a cohesive sounding piece, and that's why I put in the extra work to make sure we're on the same page.</p> 
-        <p>Even though I'm based out of Newport News I'm more than willing to travel for a tracking session. My main goal is to make good sounding records with good people. Send me and email if you would like to talk about your project!</p>
+        <p>Howdy, my name's Buddy Harlow, and I am an audio engineer based out of Newport News, VA. I got my start in audio production playing in 
+          bands in Harrisonburg, VA and freelancing out of Blue Sprocket Sound. My goals as an audio engineer center around translating an artist’s 
+          goals into the audio production domain. In audio production, collaboration and communication are key to making a cohesive sounding piece, 
+          and that's why I put in the extra work to make sure we're on the same page.</p> 
+        <p>Even though I'm based out of Newport News, I'm more than willing to travel for a tracking session. 
+          My main goal is to make good sounding records with good people. Send me an email if you would like to talk about your project!</p>
     </div>
   </div>
   <div id="contact">
