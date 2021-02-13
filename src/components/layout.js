@@ -13,15 +13,6 @@ import Menu from "./menu"
 import "./layout.css"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
 
   return (
     <>
@@ -30,7 +21,7 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <footer>
         <div class="full-width-bar">
-          <p>Made by the Big Ole Website Guy&copy; 2020</p>
+          <p id="site-bottom-tag">Made by the Big Ole Website Guy&copy; 2020</p>
         </div>
         </footer>
       </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from "../images/BHAC-white-03.png"
 import SEO from "../components/seo"
+import { graphql } from 'gatsby'
 import "../components/layout.css"
 
 const Header = () => (
@@ -17,3 +18,4 @@ const Header = () => (
     </div>
 )
 export default Header
+

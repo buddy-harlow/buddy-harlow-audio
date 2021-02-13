@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Buddy Harlow Audio Co.`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `A portfolio page showing audio and mix engineering examples `,
+    url: "https://buddyharlowaudio.com",
+    image: "/Studio.jpg",
+    author: "Buddy Harlow"
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

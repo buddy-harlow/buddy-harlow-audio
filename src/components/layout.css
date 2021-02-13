@@ -8,56 +8,35 @@ body{
  font-family: 'Roboto', sans-serif; 
  width: 100%;
 }
-
-nav{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 8vh;
-  margin-top: 20px;
-
+.navbar{
+  background-color: white;
 }
-
-.logo a{
+.navbar-brand{
   text-transform: uppercase;
   text-decoration: none;
   color: #333;
   letter-spacing: 4px;
-  font-size: 22px;
+  font-size: 20px;
 }
-.nav-links{
-  display: flex;
-  justify-content: space-around;
-  width: 45%;
+.nav-item{
+  padding-left:20px;
+  padding-right:20px;
 }
-.nav-links li{ 
-  list-style: none;
-
-}
-.nav-links a{ 
+.nav-item a{
   text-decoration: none;
-  color: #333;
-  letter-spacing: 3px;
-  font-size: 14px;
-  font-weight: 500;
-  text-transform: uppercase;
-
+    color: #333;
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
 }
-.burger{
-  display: none;
+.navbar-toggler-icon{
+  border: none;
 }
-.burger div{
-  width: 25px;
-  height: 2px;
-  background-color: #333;
-  margin: 5px;
-
-}
-
 
 .img-container{
   background-image: url(../images/BuddyHarlowAudio.jpg); 
-  height: 90vh;
+  height: 70vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -72,8 +51,12 @@ nav{
   margin-top: 80px;
   margin-bottom: 80px;
 }
-.inner-container img{
-width: 38%;
+.inner-container  .gatsby-image-wrapper{
+  display: block;
+  top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
 }
 .full-width-bar{
   display: flex;
@@ -118,98 +101,29 @@ P{
 
 
 .about{
-  margin-top: 80px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  padding-bottom: 30px;
 }
 
 .aboutMe{
   display: flex;
   flex-direction: column;
-  width: 45%;
+  width: 40%;
+}
+.aboutMe h2{
+  background-color: #be1e2d;
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 100%
 }
 .aboutMe p{
  padding-top: 25px;
 }
 
-#portrait{
- display: flex;
- align-items: center;
- width: 38%;
-}
-#portrait img{
-  width: 60%;
-  margin-left: 15%;
-}
-
-#services{
-  margin-top: 80px;
-  margin-bottom: 14vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-
-}
-
-
-
-.service-box{
-  width: 28%;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.2s ease-in;  
-  
-}
-
-.service-box:hover{
-
-  transform: scale(1.03);
-
-}
-
-
-.img-container-services img{
-  width: 100%;
-  filter: grayscale(100%);
-  
-}
-
-.img-container-services img{
-  width: 100%;
-  filter: grayscale(100%);
-  transition: filter 0.2s ease-in;
-  transition: transform 0.2s ease-in;  
-  
-}
-
-.img-container-services img:hover{
-  filter: grayscale(0%);
-
-}
-
-#services p{
-   padding: 15px;
-   border-left: 1px #be1e2d solid;
-   border-bottom: 1px #be1e2d solid;
-   border-right: 1px #be1e2d solid;
-   border-radius: 0px 0px 15px 15px;
-   box-shadow: 5px 10px 50px rgb(100, 100, 100, 0.5);
-   /* width: 300px; */
-}
-
-#services h3{
-  text-transform: uppercase;
-  text-align: center;
-  padding: 15px 0px;
-  color: #f7f7f7;
-  background-color: #be1e2d;
- /* width: 300px; */
-
-}
 .portfolio{
    display: flex;
    flex-direction: column;
@@ -239,41 +153,65 @@ P{
   padding-bottom: 30px;
 }
 
-.contact-section{
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-align-items: center;
-width: 100%;
-margin-top: 40px;
-margin-bottom: 40px;
+#contact{
+  background-color: #be1e2d;
+  color: white;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 
 }
-
-.contact-form{
+#contact h2{
+  margin-top: 0px;
+}
+#contact-form{
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  align-items: left;
-  width: 45%;
-  max-width: 700px;
-  min-width: 400px;
-  padding: 5vh;
-  background: #be1e2d;
-  border-radius: 1%;
-  box-shadow: 5px 10px 50px rgb(100, 100, 100, 0.5);
-
-
+  width: 50%;
+  color: white;
+  
 }
-.contact-text{
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: lexf;
-  width: 40%;
-
+#contact-form input{
+  padding-top: 10px;
+  background-color: transparent;
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
+  border-bottom: white 2px solid;
 }
 
+#contact-form textarea{
+  padding-top: 10px;
+  background-color: transparent;
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
+  border-bottom: white 2px solid;
+
+}
+#contact-form button{
+margin-top: 30px;
+background-color: transparent;
+color: white;
+font-size: 20px;
+border: white 2px solid;
+}
+
+#contact-form ::placeholder{
+  color: white;
+  font-size: 20px;
+}
+input:focus {
+  outline-width: 0;
+}
+textarea:focus{
+  outline-width: 0; 
+}
 .textb{
   display: flex;
   flex-direction: column;
@@ -289,45 +227,7 @@ margin-bottom: 40px;
 
 }
 
-.contact-form input, .contact-form textarea{
-  height: 5vh;
-  border: none;
-  border-bottom: 1px solid #f7f7f7;
-  font-family: 'Roboto', sans-serif;
-  font-size: 22px;
-  font-weight: 400;
-  color: #f7f7f7;
-     
-}
-.contact-form input.send-btn {
-  margin-top: 20px;
-  display: flex;
-  width: 35%;
-  justify-content: left;
-  align-items: center;
-  background: transparent;
-  padding-left: 5px;
-  padding-top: 5px;
-  font-family: 'Roboto', sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 22px;
-  font-weight: 400;
-  color: #f7f7f7;
-  border: 1px solid #f7f7f7;
-  
-}
-input::placeholder, textarea::placeholder{
-  padding-left: 5px;
-  padding-top: 5px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 22px;
-  font-weight: 400;
-  color: #f7f7f7;
-}
-input:focus, textarea:focus, select:focus{
-  outline: none;
-}
+
 
 .iframe-container{
 
@@ -343,29 +243,10 @@ input:focus, textarea:focus, select:focus{
   height: 80%;
   margin-left: 10%;
 }
-
-@media screen and (max-width:1300px){
-    #services{
-      margin-top: 80px;
-      margin-bottom: 6vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      width: 100%;
-  
-   }
-
-   .service-box{
-      width: 80%;
-      display: flex;
-      flex-direction: column;
-      transition: transform 0.2s ease-in;
-      margin-bottom: 40px; 
-      
-   }
-
+#site-bottom-tag{
+  font-size: 12px;
 }
+
 
 @media screen and (max-width:880px){
   body{
@@ -400,7 +281,7 @@ input:focus, textarea:focus, select:focus{
       
       display: flex;
       flex-direction: column;
-      width: 80%;
+      width: 100%;
       margin: auto;
      
   }
@@ -411,70 +292,41 @@ input:focus, textarea:focus, select:focus{
       flex-direction: column;
       text-align: center;
       align-items: center;
-      width: 75%;
+      width: 85%;
       margin-top: 20px;
   }
 
   #portrait{
-      display: flex;
-      align-items: center;
-      width: 60%;
-      margin-top: 20px;
+    display: block;
+    margin-top: 16px;
+    justify-content: center;
+      
    }
-   #portrait img{
-       width: 100%;
-    }
 
-   .contact-section{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      width: 100%;
-      margin-top: 40px;
-      margin-bottom: 40px;
-      
-      }
-      .contact-form{
-          display: flex;
-          flex-direction: column;
-          justify-content: left;
-          align-items: left;
-          width: 80%;
-          max-width: 700px;
-          min-width: 400px;
-          padding: 5vh;
-          background: #be1e2d;
-          border-radius: 1%;
-          box-shadow: 5px 10px 50px rgb(100, 100, 100, 0.5);
-      
-      
-      }
-      .contact-text{
-          display: flex;
-          flex-direction: column;
-          justify-content: left;
-          align-items: lexf;
-          width: 80%;
-          margin-top: 40px;
-      
-      }
-}
-.nav-active{
-  transform: translateX(0%);
-}
-
-@keyframes navLinkFade{
-  from{
-      opacity: 0;
-      transform: translateX(50px);
-  }
-  to{
-     opacity: 1;
-     tranform: translateX(0px); 
-  }
+   #contact{
+    background-color: #be1e2d;
+    color: white;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
   
+  }
+  #contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    
+  }
+
 }
+
+
+
 
 
 
