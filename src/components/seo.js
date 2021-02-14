@@ -29,7 +29,7 @@ function SEO({ description, lang, meta, title }) {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
-  const image = siteImage
+  const image = site.siteMetadata.image
 
   return (
     <Helmet
