@@ -3,7 +3,7 @@ module.exports = {
     title: `Buddy Harlow Audio Co.`,
     description: `Howdy, my name's Buddy Harlow, and I am an audio engineer based out of Newport News, VA. `,
     url: "https://buddyharlowaudio.com",
-    image: 'src/images/Studio.jpg',
+    image: './images/Studio.jpg',
     author: "Buddy Harlow"
   },
   plugins: [
@@ -20,7 +20,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `gatsby-site`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,
